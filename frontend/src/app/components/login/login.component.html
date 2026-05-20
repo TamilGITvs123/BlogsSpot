@@ -1,0 +1,16 @@
+<div class="card">
+  <h3>{{ isRegister ? 'Register' : 'Login' }}</h3>
+  <div *ngIf="error" style="color:red">{{ error }}</div>
+  <div>
+    <label>Username</label>
+    <input [(ngModel)]="username" />
+  </div>
+  <div>
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password" />
+  </div>
+  <div style="margin-top:8px">
+    <button class="btn btn-primary" (click)="submit()">{{ isRegister ? 'Register' : 'Login' }}</button>
+    <button style="margin-left:8px" (click)="isRegister = !isRegister">{{ isRegister ? 'Switch to Login' : 'Switch to Register' }}</button>
+  </div>
+</div>

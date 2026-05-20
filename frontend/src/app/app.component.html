@@ -1,0 +1,14 @@
+<div class="nav">
+  <div style="flex:1"><a routerLink="/">BlogsSpot</a></div>
+  <div>
+    <a routerLink="/">Home</a>
+    <span style="margin:0 8px">|</span>
+    <a routerLink="/edit" *ngIf="auth.isAuthenticated()">New</a>
+    <span style="margin:0 8px">|</span>
+    <a routerLink="/login" *ngIf="!auth.isAuthenticated()">Login / Register</a>
+    <button class="btn btn-primary" *ngIf="auth.isAuthenticated()" (click)="logout()">Logout</button>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

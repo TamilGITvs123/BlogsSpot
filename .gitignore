@@ -1,0 +1,14 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# Node.js dependencies
+node_modules/
+
+# Angular cache
+.angular/
+frontend/.angular/
+
+# Backend output
+/backend/bin/
+/backend/obj/

@@ -1,0 +1,9 @@
+<div>
+  <h2>All Blogs</h2>
+  <div *ngFor="let b of blogs" class="card">
+    <h3>{{ b.title }}</h3>
+    <div style="color:#666">By {{ b.author }} on {{ b.createdAt | date:'medium' }}</div>
+    <p>{{ b.content }}</p>
+    <button class="btn" (click)="edit(b.id)">Edit</button>
+  </div>
+</div>

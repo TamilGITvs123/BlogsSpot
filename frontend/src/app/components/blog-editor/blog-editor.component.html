@@ -1,0 +1,14 @@
+<div class="card">
+  <h3>{{ id ? 'Edit Blog' : 'New Blog' }}</h3>
+  <div>
+    <label>Title</label>
+    <input [(ngModel)]="title" />
+  </div>
+  <div>
+    <label>Content</label>
+    <textarea rows="8" [(ngModel)]="content"></textarea>
+  </div>
+  <div style="margin-top:8px">
+    <button class="btn btn-primary" (click)="save()">Save</button>
+  </div>
+</div>
