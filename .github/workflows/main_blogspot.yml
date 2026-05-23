@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'blogspot'
           slot-name: 'Production'
-          package: ./blogsspot
+          package: ./dist/blogsspot
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E3CAE235A5174C2CB98A4BE7AA92C133 }}
