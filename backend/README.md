@@ -26,3 +26,12 @@ The API will start on the default port. Endpoints:
 Notes
 - This demo uses `Database.EnsureCreated()` for simplicity. For production use migrations.
 - Passwords are hashed with BCrypt.
+
+port 5000 was forwarded in Codespaces as private
+Changed it to public with:
+-run it in cmd
+    gh codespace ports visibility 5000:public --codespace reimagined-pancake-x7v6pj7x5w9h6gx4
+use docker to run postgresql database 
+    docker run --name postgres-db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=welcome@1 -p 5432:5432 -d postgres:latest
+
+
